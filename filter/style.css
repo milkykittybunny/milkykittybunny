@@ -1,0 +1,39 @@
+
+
+canvas
+{
+  width:   400px;
+  height:  200px;
+  padding: 2px;
+  border-width : 5px;
+  border-style: none;
+  border-color: lavender; 
+
+}
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#8ae2ff, #90ee90);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.orig 
+{
+  width:830px;
+  height: 50px; 
+  border: none;            
+}                                                                                                                  
+
+input, inputfill {       
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+#inputfil
+{
+  width:410px;
+  font-size:20px;
+} 
+#makegray
+{
+   font-size:20px;
+  
+}
