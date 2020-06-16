@@ -7,12 +7,12 @@ canvas
   padding: 2px;
   border-width : 5px;
   border-style: none;
-  border-color: lavender; 
+  border-color: #3fcfff; 
 
 }
 h1 {
     font-size: 72px;
-    background: -webkit-linear-gradient(#8ae2ff, #90ee90);
+    background: -webkit-linear-gradient(#3fcfff, #90ee90);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

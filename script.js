@@ -21,3 +21,19 @@ function makegray() {
   image.drawTo(canvas); 
 }
 
+function redgreenblue() {
+  var canvas = document.getElementById("can2");
+  for (var pixel of image.values()) {
+    var x = pixel.getX();
+    if (x <= 400/3) {
+      pixel.setRed(255);
+    } else {
+      if (x <= 400/3*2) {
+        pixel.setGreen(255);
+      } else{
+        pixel.setBlue(255);    
+      }
+    }
+  }
+  image.drawTo(canvas);
+}
