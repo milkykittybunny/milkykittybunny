@@ -1,0 +1,38 @@
+<style>
+	.calc { padding:20px; }
+	.calc input[type=text] { padding:5px; font:x-large Arial; }
+	.calc select { width:100%; font:large Arial; padding:10px; }
+	.calc button { margin:10px auto; padding:10px 5px; }
+	.calc textarea { padding:5px; font:x-large Arial; }
+@media all and (max-width: 576px) {
+	.calc { padding:15px; width:100%; }
+	.calc input[type=text] { width:100%; }
+	.calc textarea { width:100%; }
+}
+@media all and (min-width: 577px) {
+	.calc input[type=text] { width:400px; }
+	.calc textarea { width:400px; }
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+button, #copy {
+   background-image: linear-gradient(to left, #72f7e8, #ffa1f9); 
+  padding: 14px 40px;
+  border: none;
+  font-family: "Georgia", serif;
+  font-size: 15px;
+}
+canvas {
+  background-color: transparent;
+}
+
+h1 {
+	font-size: 72px;
+    background: -webkit-linear-gradient(#3fcfff, #90ee90);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Times New Roman", Times, serif;
+}

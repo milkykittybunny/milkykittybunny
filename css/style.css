@@ -15,6 +15,7 @@ h1 {
     background: -webkit-linear-gradient(#3fcfff, #90ee90);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Times New Roman", Times, serif;
   }
 .orig 
 {
@@ -38,13 +39,4 @@ input, inputfill {
   
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 60px;
-}
 
-li a {
-  display: block;
-}

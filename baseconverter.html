@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+<!--Navigation bar-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+  
+
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     
+     <script src=./baseconverter.js>
+     </script>
+       <link rel="stylesheet" href="./css/baseconverter.css">
+       <script src="https://www.dukelearntoprogram.com/course1/common/js/cs101/SimpleImage.js"></script>
+     
+   <title>CsBunny's Home</title>
+   
+  </head> 
+  <body>
+  <h1>Base Converter</h1>
+  
+  <script src="https://www.rapidtables.com/lib/bignumber/bignumber.min.js"></script>
+  </head><div>
+  <form name="calcform" autocomplete="off">
+      <table class="calc">
+        <tbody>
+        <tr>
+          <td>Number:</td>
+        </tr>
+        <tr>
+          <td><input type="text" id="x" name="x" class="intext" required="" autofocus="" tabindex="1" style="background-color: white;"></td>
+        </tr><tr>
+          <td>From base:</td>
+        </tr>
+        <tr>
+          <td><select name="sel1" id="sel1" tabindex="2">
+              <option value="2">2 (binary)</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option value="8">8 (octal)</option>
+              <option>9</option>
+              <option value="10" selected="">10 (decimal)</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option value="16">16 (hex)</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+              <option>32</option>
+              <option>33</option>
+              <option>34</option>
+              <option>35</option>
+              <option>36</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>To base:</td>
+        </tr>
+        <tr>
+          <td><select name="sel2" id="sel2" tabindex="3">
+              <option value="2">2 (binary)</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option value="8">8 (octal)</option>
+              <option>9</option>
+              <option value="10">10 (decimal)</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option value="16" selected="">16 (hex)</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+              <option>32</option>
+              <option>33</option>
+              <option>34</option>
+              <option>35</option>
+              <option>36</option>
+          </select></td>
+        </tr>
+        <tr>
+            <td>
+              <button type="button" title="Convert" class="btn" tabindex="4" onclick="convert()"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+              <button type="reset" title="Reset" class="btn" tabindex="5"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+              <button type="button" title="Swap conversion" class="btn" tabindex="6" onclick="swap()"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_114_retweet.png" alt=""> Swap</button>
+            </td>
+        </tr>
+        <tr>
+          <td>Result number:</td>
+        </tr>
+        <tr>
+          <td><textarea rows="2" id="y" class="outtext" readonly="" tabindex="7"></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="button" size="15"id="copy"value="Copy" onclick="copy()" class="btn" tabindex="8"></td>
+        </tr>
+        </tbody>
+      </table>
+      </form>
+    </div>
+</body>
+</html> 

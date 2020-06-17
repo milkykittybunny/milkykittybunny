@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<!--Navigation bar-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+  
      
      <script src=./script.js>
      </script>
@@ -14,13 +30,6 @@
   <body>
 
 
-   <nav>
-     <ul>
-       <li><a href="default.asp">Home</a></li>
-       <li><a href="filter.html">Filter Fun!</a></li>
-       <li><a href="baseconverter.html">Base Converter</a></li>
-     </ul>
-   </nav>
 <p></p>
    <div id = "home">
 
@@ -32,7 +41,7 @@
 
 
 </div>
-<div id = "filter">><canvas id = "can">
+<div id = "filter"><canvas id = "can">
     
 </canvas>
 <canvas id = "can2">
