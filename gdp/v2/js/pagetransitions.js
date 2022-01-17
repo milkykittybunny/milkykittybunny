@@ -120,7 +120,7 @@ var PageTransitions = (function() {
 			case 1:
 				outClass = 'pt-page-moveToLeft';
 				inClass = 'pt-page-moveFromRight';
-				$nextPage = 0, outClass = outClass, inClass = inClass;
+				// $nextPage = 0, outClass = outClass, inClass = inClass;
 				break;
 			case 2:
 				outClass = 'pt-page-moveToRight';
@@ -137,7 +137,7 @@ var PageTransitions = (function() {
 			case 5:
 				outClass = 'pt-page-fade';
 				inClass = 'pt-page-moveFromRight pt-page-ontop';
-				nextPage = 1, outClass = outClass, inClass = inClass;
+				// nextPage = 1, outClass = outClass, inClass = inClass;
 				break;
 			case 6:
 				outClass = 'pt-page-fade';
