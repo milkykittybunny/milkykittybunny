@@ -121,7 +121,7 @@ const drawFullLine = (pt, m, line) => {
     }
     line.setAttributeNS(null, "x1", 0);
     line.setAttributeNS(null, "y1", -m * pt[0] + pt[1]);
-    line.setAttributeNS(null, "x2", 300);
+    line.setAttributeNS(null, "x2", CANVAS_WIDTH);
     line.setAttributeNS(null, "y2", m * (CANVAS_WIDTH - pt[0]) + pt[1]);
 };
   
@@ -151,3 +151,49 @@ const makeTriangle = (pt0, pt1, pt2, ptoTri) => {
 const makeCircle = (r, x, y) => {
     ptoCircle.setAttributeNS(r, cx, cy);
 };
+
+
+const getEquationFromPoint = (a, b) => {
+    let m = (a[1] - b[1]) / (a[0] - b[0]);
+    let bb = a[1] - m * a[0];
+    return [m, bb];
+};
+
+const pedalPoint = (a, b, c, p) => {
+    let equAB = getEquationFromPoint(a, b);
+    let equAC = getEquationFromPoint(a, c);
+    let equBC = getEquationFromPoint(b, c);
+    
+    let yAB = equAB[0] * p[0] + equAB[1];
+    let yAC = equAC[0] * p[0] + equAC[1];
+    let yBC = equBC[0] * p[0] + equBC[1];
+
+    let abSign = (yAB >= p[1]);
+    let acSign = (yAC >= p[1]);
+    let bcSign = (yBC >= p[1]);
+    if (abSign && acSign && bcSign) {
+        return 1;
+    }    
+    if (!abSign && acSign && bcSign) {
+        return 2;
+    }
+    if (!abSign && !bcSign && acSign) {
+        return 3;
+    }
+    if (!acSign && bcSign && abSign) {
+        return 6;
+    }
+    if (!(abSign || bcSign || acSign)) {
+        return 4;
+    }
+    if (!(bcSign) && !acSign && abSign) {
+        return 5;
+    }
+    
+    return 0;
+}
+
+const radiansToDegress = (r) => {
+    let pi = 3.14;
+    return r * (180/pi);
+}

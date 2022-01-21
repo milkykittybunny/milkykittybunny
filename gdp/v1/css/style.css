@@ -8,6 +8,8 @@ h1 {
     margin-bottom: 0;
     margin-bottom: 0;
     font-size: 40px;
+    text-align: center;
+
 }
 
 h2 {
@@ -16,6 +18,8 @@ h2 {
     margin-bottom: 0px;
     color: hsla(0, 0%, 24%, 1);
     font-size: 28px;
+    text-align: center;
+
 }
 
 h3 {
@@ -35,6 +39,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 ol {
@@ -62,7 +67,7 @@ ol {
 }
 
 a {
-    text-decoration: none;
+    color: black;
     display: inline;
 }
 
@@ -92,6 +97,7 @@ li {
 
 svg {
     border: 2px solid black;
+
 }
 
 #tri0, .ptoTri, #nap1, #nap2 {
@@ -101,6 +107,37 @@ svg {
 }
 
 .app {
+    display:inline-block;
+
     margin-top: 2rem;
-    margin-left: 3rem;
+    vertical-align:middle;
+    flex-grow: 2;
+    flex-basis: 500px;
+}
+
+.svg-text {
+    display: flex;
+    flex-basis: 200;
+    overflow-wrap: break-word;
+    width: 300px;
+    hyphens: manual;
+    flex-shrink: 4;
+    flex-grow: 0;
+    order: 4;
+}
+
+.prob {
+    display: flex;
+    width: 820px;
+    height: 600px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+.s-text {
+    width: 200;
+    overflow-wrap: break-word;
 }

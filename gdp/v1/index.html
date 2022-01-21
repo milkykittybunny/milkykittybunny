@@ -21,7 +21,7 @@
     <title>GDP @ UCI</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/style.css" type="text/css" /> 
         
     <link rel="apple-touch-icon" sizes="180x180" href="/~gdp/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/~gdp/icons/favicon-32x32.png">
@@ -62,70 +62,90 @@
         
         </ol>
       </div>
+    <div class ="content">
+    <h3>Topics:</h3>
+        <ol>
+            <li>
+        <h3><a href="https://www.math.uci.edu/~gdp/projects/topics/topic05.pdf">Simson Line</a></h3>
 
-    <h2><a href="https://www.math.uci.edu/~gdp/projects/topics/topic05.pdf">Simson Line</a></h2>
+
+        <div class="main">
+            <div class="col2">
+                                <div class="app" width="500">
+                                    <div class= "prob">
+                                        <div class="svg-text" width="200"><p class="s-text">This line is called the Simson Line, named after Robert Simson. Robert Simson (October 14,  1687 -- October 1,  1768) was a Scottish mathematician and professor of mathematics at the University of Glasgow. See <a href=https://en.wikipedia.org/wiki/Simson_line>Wikipedia</a> for further information. 
+                                            
+                                            <br/><br/>
+                                            By the investigation of Mackay, the line was first dicovered by Wallace, 1768--1843)
+                                            </p></div>
 
 
-    <div class="main">
-        <div class="col2">
-            <div class="app">
-                <svg id="tri-app" width="500" height="500" style="border: 2px solid black" >
-                    <circle id="ptoCircle_simsonline" r="200" cx="250" cy="250" fill="white" stroke="black"/>
-                    <polygon id="tri_simsonline" fill="white" stroke="black"/>
-       <text id="letterA_simsonline">A</text>
-        <text id="letterB_simsonline">B</text>
-        <text id="letterC_simsonline">C</text>
-         <line id="line0_simsonline"  stroke="turquoise" />
-        <line id="line1_simsonline"  stroke="blue" />
-        <line id="line2_simsonline"  stroke="#6495ED" />
-        <line id="line3_simsonline"  stroke="red" />
-        <line id="line4_simsonline"  stroke="red" />
-                </svg>
+                    <svg id="tri-app" width="500" height="500" style="border: 2px solid black" >
+                        <circle id="ptoCircle_simsonline" r="200" cx="250" cy="250" fill="white" stroke="black"/>
+                        <polygon id="tri_simsonline" fill="white" stroke="black"/>
+        
+            <rect id="rightAngleA_simsonline" stroke="purple" fill = "white"></rect>
+            <rect id="rightAngleB_simsonline" stroke="purple" fill = "white" width="8" height="8"></rect>
+            <rect id="rightAngleC_simsonline" stroke="purple" fill = "white" width="8" height="8"></rect>
+
+            <line id="line0_simsonline"  stroke="purple" />
+            <line id="line1_simsonline"  stroke="blue" />
+            <line id="line2_simsonline"  stroke="#6495ED" />
+            <line id="line3_simsonline"  stroke="lime" />
+            <line id="line4_simsonline"  stroke="lime" />
+            <line id="line5_simsonline"  stroke="#6495ED" />
+            <line id="lineExtend_simsonline"  stroke="black" />
+            <line id="lineExtend2_simsonline"  stroke="black" />
+            <text id="letterA_simsonline">C</text>
+            <text id="letterB_simsonline">B</text>
+            <text id="letterC_simsonline">A</text>
+            <text id="letterP_simsonline">P</text>
+                    </svg>
+                </div></div></li><li>
+                <h3 color="black"><a href=https://www.math.uci.edu/~gdp/projects/topics/topic07.pdf >Isogonal Conjugate and Isotomic Conjugate Points</a></h3>
+
+                <div class="app">
+                    <svg id="tri-app_isotomic" width="500" height="500" style="border: 2px solid black">
+
+
+                        <polygon id="tri_isotomic"  stroke="black" fill="white"/>
+                                    
+                            <line id="lineA_isotomic"  stroke="purple" />
+                            <line id="lineB_isotomic"  stroke="purple" />
+                            <line id="lineC_isotomic"  stroke="purple" />
+                            <line id="lineAp_isotomic"  stroke="orange" />
+                            <line id="lineBp_isotomic"  stroke="orange" />
+                            <line id="lineCp_isotomic"  stroke="orange" />
+                    
+    <circle cx="150" cy= "300" r="2" stroke="black" stroke-width="1" fill="black"id = "dot_isotomic"/>
+                    
+        <text id="letterA_isotomic" font-size="25px">C</text>
+            <text id="letterB_isotomic" font-size="25px">B</text>
+            <text id="letterC_isotomic"font-size="25px">A</text>
+            <text id="letterP_isotomic"font-size="25px" style="text-shadow:
+        -1px -1px 0 #FFFFFF,
+        0   -1px 0 #FFFFFF,
+        1px -1px 0 #FFFFFF,
+        1px  0   0 #FFFFFF,
+        1px  1px 0 #FFFFFF,
+        0    1px 0 #FFFFFF,
+        -1px  1px 0 #FFFFFF,
+        -1px  0   0 #FFFFFF;">P</text>
+                    </svg>
+                </div></li>
+
+
             </div>
-            <h2 color="black"><a href=https://www.math.uci.edu/~gdp/projects/topics/topic07.pdf >Isogonal Conjugate and Isotomic Conjugate Points</a></h2>
-
-            <div class="app">
-                <svg id="tri-app_isotomic" width="500" height="500" style="border: 2px solid black">
-
-
-                    <polygon id="tri_isotomic"  stroke="black" fill="white"/>
-                                
-                          <line id="lineA_isotomic"  stroke="purple" />
-                          <line id="lineB_isotomic"  stroke="purple" />
-                          <line id="lineC_isotomic"  stroke="purple" />
-                          <line id="lineAp_isotomic"  stroke="orange" />
-                          <line id="lineBp_isotomic"  stroke="orange" />
-                          <line id="lineCp_isotomic"  stroke="orange" />
-                  
-<circle cx="80" cy= "300" r="2" stroke="black" stroke-width="1" fill="black"id = "dot_isotomic"/>
-                  
-       <text id="letterA_isotomic" font-size="25px">A</text>
-        <text id="letterB_isotomic" font-size="25px">B</text>
-        <text id="letterC_isotomic"font-size="25px">C</text>
-        <text id="letterP_isotomic"font-size="25px" style="text-shadow:
-     -1px -1px 0 #FFFFFF,
-     0   -1px 0 #FFFFFF,
-     1px -1px 0 #FFFFFF,
-     1px  0   0 #FFFFFF,
-     1px  1px 0 #FFFFFF,
-     0    1px 0 #FFFFFF,
-    -1px  1px 0 #FFFFFF,
-    -1px  0   0 #FFFFFF;">P</text>
-                </svg>
-            </div>
-
 
         </div>
-
-    </div>
-
+    </ol>
+</div>
 
     <script src="js/geoutil.js"></script>
 
     <script src="js/simsonline.js"></script>
     <script src="js/isotomic.js"></script>
-    <style src="css/style.css"></style>
- 
+    
 </body>
 
 </html>

@@ -9,7 +9,7 @@ var pA = [xx + Math.cos(pi / 6) * radius, yy + Math.sin(pi / 6) * radius];
 var pB = [xx - Math.cos(pi / 6) * radius, yy + Math.sin(pi / 6) * radius];
 var pC = [xx - Math.cos(pi / 3) * radius, yy - Math.sin(pi / 3) * radius];
 const points = [pA, pB, pC];
-var pP = [80, 300];
+var pP = [150, 300];
 
 mAB = (pA[1] - pA[1]) / (pB[0] - pA[0]);
 mBC = (pB[1] - pC[1]) / (pB[0] - pC[0]);
@@ -31,32 +31,27 @@ const letterP = document.querySelector("#letterP_isotomic");
 
 
 ptoAngles = [1.4, 3.4, 5, 6];
+
+letterA.setAttribute("x", pA[0] + 5);
+letterA.setAttribute("y", pA[1]);
+letterB.setAttribute("x", pB[0] - 20);
+letterB.setAttribute("y", pB[1] + 5);
+letterC.setAttribute("x", pC[0] - 5);
+letterC.setAttribute("y", pC[1] - 5);
+
+const isotomicMouse = (p) => {
  
 
-
- 
-tri.setAttributeNS(null, "points", makeString(points));
-// svg.("onclick", (event) => {
-//   var p;
-// });
-svg.addEventListener("mousemove", (event) => {
-  letterA.setAttribute("x", pA[0] + 5);
-  letterA.setAttribute("y", pA[1]);
-  letterB.setAttribute("x", pB[0] - 20);
-  letterB.setAttribute("y", pB[1] + 5);
-  letterC.setAttribute("x", pC[0] - 5);
-  letterC.setAttribute("y", pC[1] - 5);
-
-
-  var p = new DOMPoint(event.clientX, event.clientY);
-  p = p.matrixTransform(svg.getScreenCTM().inverse());
   if (isInside(pA[0], pA[1], pB[0], pB[1], pC[0], pC[1], p.x, p.y)) {
-    pP = [p.x, p.y];
     dot.setAttributeNS(null, "cx", pP[0]);
     dot.setAttributeNS(null, "cy", pP[1]);
+    pP = [p.x, p.y];
     letterP.setAttribute("x", pP[0]);
     letterP.setAttribute("y", pP[1] - 10);
+  } else {
+    return;
   }
+
   var cosx =
     (p.x - xx) / Math.sqrt((p.x - xx) * (p.x - xx) + (p.y - yy) * (p.y - yy));
   var sinx =
@@ -103,6 +98,22 @@ svg.addEventListener("mousemove", (event) => {
   const dB = findDistance(pBN, pC);
   const pDB = pointAlongLine(pA, pC, dB);
   drawLine(pB, pDB, line9);
+};
+
+//isotomicMouse(pP);
+letterP.setAttribute("x", pP[0]);
+letterP.setAttribute("y", pP[1] - 10);
+ 
+tri.setAttributeNS(null, "points", makeString(points));
+// svg.("onclick", (event) => {
+//   var p;
+// });
+svg.addEventListener("mousemove", (event) => {
+
+  var p = new DOMPoint(event.clientX, event.clientY);
+  p = p.matrixTransform(svg.getScreenCTM().inverse());
+  isotomicMouse(p);
+
   // if ()
   
 });
